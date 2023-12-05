@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    font-family: LEMONMILK;
+}
+@font-face {
+    font-family: 'valorant';
+    src: url('typographie/Valorant\ Font.ttf') format('truetype');
+
+}
+@font-face {
+    font-family: 'LEMONMILK';
+    src: url('typographie/LEMONMILK-Regular.otf') format('truetype');
+
+}
+header{
+    background-color: blueviolet;
+    width: 100%;
+    height:500px;
+    background-image: url(image/valorant1.jpg);
+    
+
+}
+
+.logo img{
+    width: 50px;
+    height: auto;
+    margin-right: 35px;
+
+
+
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+    margin: 3px;
+    
+    
+    
+}
+nav li{
+    list-style: none;
+    padding:     20px;
+    
+
+
+    
+}
+.menu a{
+    color:#ffffff;
+    text-decoration: none;
+    font-family: LEMONMILK;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #110F72;
+}
+sections{
+    width: 100%;
+    height: auto; 
+}
+
+h1{
+    text-align: center;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.menu img {
+
+    width: 350px;
+    height: auto;
+
+
+}
+
+.maps h1 {
+    visibility: hidden;
+}
+
+.maps:hover h1 {
+    visibility: visible;
+    position: absolute;
+}
+
+
