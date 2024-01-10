@@ -3,96 +3,257 @@
     padding: 0;
 }
 
+body{
+    background-color: #F2EFEB;
+}
+
 h1{
     font-family: LEMONMILK;
-}
-@font-face {
-    font-family: 'valorant';
-    src: url('typographie/Valorant\ Font.ttf') format('truetype');
-
+    text-align: center;
+        
 }
 @font-face {
     font-family: 'LEMONMILK';
     src: url('typographie/LEMONMILK-Regular.otf') format('truetype');
 
 }
-header{
-    background-color: blueviolet;
-    width: 100%;
-    height:500px;
-    background-image: url(image/valorant1.jpg);
-    
+@font-face {
+    font-family: 'Valorant';
+    src: url('typographie/Valorant\ Font.ttf') format('truetype');
+}
 
+header{
+    width: 100%;
+    height:50vh;
+    background-image: url(image/valorant1.jpg);
+    background-size: 1555px;
+    background-repeat: no-repeat;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo img{
     width: 50px;
     height: auto;
     margin-right: 35px;
-
-
-
 }
 
 header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    padding: 0px 20px;
+    height: 100px;
+    background-color: #00000049;
 }
-nav ul{
+.menu nav ul{
     display: flex;
     justify-content: center;
-    margin: 3px;
-    
-    
-    
+    margin: 15px;
 }
 nav li{
     list-style: none;
-    padding:     20px;
-    
-
-
-    
+    position: relative;
 }
 .menu a{
     color:#ffffff;
     text-decoration: none;
     font-family: LEMONMILK;
     padding: 10px;
+    width: 100%;
     border-radius: 5px;
-    background-color: #110F72;
+    background-color: #7941F2;
+    transition: 0.5s;
+    display: block;
+    text-align: center;
 }
-sections{
+
+.menu a:hover{
+    background-color: #ffffff;
+    color: #7941F2;
+    transition: 0.5s;
+}
+
+section {
     width: 100%;
     height: auto; 
 }
 
-h1{
-    text-align: center;
-}
+section h1{
+    font-family: LEMONMILK;
+    font-size: 50px;
 
+    
+}
+.maps{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    font-family: LEMONMILK;
+}
+.maps img {
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s;
+    object-fit: cover;  
+    width: 300px;
+    margin: 10px;
+}
 .menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-}
-.menu img {
-
-    width: 350px;
-    height: auto;
-
-
+    margin-top: 50px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
 }
 
-.maps h1 {
-    visibility: hidden;
+.menu .card img {
+    height: 100%;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.5s;
+    width: 100%;
+    object-fit: cover;
 }
 
-.maps:hover h1 {
-    visibility: visible;
+.menu .card {
+    transform: scale(1);
+    transition: 0.5s;
+    width: 500px;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+}
+
+.menu .card:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.card p {
     position: absolute;
+    visibility: hidden;
+    text-align: center;
+    width: 100%;
+    top: 45%;
+}
+
+.card:hover p {
+    visibility: visible;
+    color: black;
+    font-size: 30px;
+    font-family: LEMONMILK;
+}
+
+.card:hover img {
+    opacity: 0.3;
+    background-color: rgb(82, 142, 82);
+}
+
+aside {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.contact-form {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
 }
 
 
+footer{
+    position: relative;
+    height: 50px;
+    background-color: #111111;   
+}
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+footer a {
+    position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: #ffffff;
+    font-family: LEMONMILK;
+    background-color: #7941F2;
+    margin: 10px;
+
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    left: 0;
+    background-color: beige;
+    margin: 0;
+    z-index: 1;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+.submenu li {
+    display: block;
+}
+
+.submenu a {
+    color: #555;
+    width: 100%;
+}
+
+.submenu a:hover {
+    background-color: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #111111;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #111111;
+}
